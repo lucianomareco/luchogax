@@ -24,7 +24,7 @@ export default function Home () {
       >
         <Text css={{ color: '$gray800' }}>DESDE 19/07/2023</Text>
         <Text size={32}>MILANESAS COMIDAS</Text>
-        <Text css={{ color: '$gray800' }}>POR LUCHOGAX</Text>
+        <Text css={{ color: '$gray800' }}>POR @23867aa1</Text>
         <Spacer y={1} />
         <Container css={{
           p: 0,
