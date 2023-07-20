@@ -1,0 +1,7 @@
+{
+  "extends": ["./node_modules/standard/esLintrc.json","next/core-web-vitals"],
+  "globals": {
+    "React": true,
+    "JSX": true
+  }
+}

@@ -1,0 +1,79 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    /* background: rgb(20,70,82);
+    background: radial-gradient(circle, rgba(20,70,82,1) 0%, rgba(2,1,29,1) 100%);     */
+    min-height: 100vh;
+  }
+}
+
+.nft{
+  height: 300px;
+  width: 300px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.nft::before{
+  content: '';
+  width: 800px;
+  height: 600px;
+  left: -150px;  
+  top: -150px;
+  background: linear-gradient(#00e5ff,#b400fb);
+  position: absolute;
+  animation: animate 3s linear infinite;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.nft::after{
+  content:'';
+  position: absolute;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 80%;
+  inset: 5px;
+  border-radius: 5px;
+}
+
+.nft_inner{
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  color:#fff;  
+  z-index: 1;
+}
+
+.nft_inner > a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+}
